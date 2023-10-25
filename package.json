@@ -1,37 +1,22 @@
 {
-  "name": "ntn-boilerplate",
-  "version": "2.1.4",
-  "description": "Nuxt-Tailwind-NetlifyCMS boilerplate",
-  "author": "Sven Parker <hello+dev@svenparker.com> (https://svenparker.com)",
+  "name": "lamarelle",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "export": "npm run build && next export"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Knogobert/ntn-boilerplate#readme"
-  },
-  "license": "MIT",
   "dependencies": {
-    "@nuxt/content": "^1.15.1",
-    "nuxt": "^2.15.8"
+    "next": "13.5.6",
+    "react": "^18",
+    "react-dom": "^18"
   },
   "devDependencies": {
-    "@nuxtjs/color-mode": "^2.1.1",
-    "@nuxtjs/pwa": "^3.3.5",
-    "@nuxtjs/svg": "^0.4.0",
-    "@nuxtjs/tailwindcss": "^4.2.1",
-    "eslint": "^8.22.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-prettier": "^4.0.0",
-    "netlify-cli": "^11.1.0",
-    "nuxt-purgecss": "^1.0.0",
-    "postcss": "^8.4.13",
-    "postcss-easing-gradients": "^3.0.1",
-    "postcss-preset-env": "^7.8.0",
-    "prettier": "^2.6.2",
-    "vue-content-placeholders": "^0.2.1"
+    "@babel/core": "^7.23.2",
+    "@babel/preset-react": "^7.22.15",
+    "frontmatter-markdown-loader": "^3.7.0"
   }
 }
