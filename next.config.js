@@ -2,6 +2,9 @@
 const path = require('path')
 const nextConfig = {
     output: 'export', 
+    images: {
+        unoptimized: true,
+    },
 	webpack: (cfg) => {
         cfg.module.rules.push(
             {
