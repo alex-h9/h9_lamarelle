@@ -5,9 +5,9 @@ const { i18n } = require('./next-i18next.config')
 
 const nextConfig = {
     env: {
-        NEXT_PUBLIC_I18N: i18n,
+        NEXT_PUBLIC_I18N: i18n
     },
-    // output: 'export', 
+    output: 'export', 
     images: {
         unoptimized: true,
     },
