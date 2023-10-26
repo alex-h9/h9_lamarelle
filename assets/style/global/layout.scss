@@ -1,0 +1,46 @@
+
+
+.centered{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -48%, 0);
+    width: max-content;
+    &--logo{
+        width: 100%;
+        @include is-phone{
+            width: 101vw;
+        }
+    }
+    &--address{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate3d(-50%, -88%, 0);
+        width: max-content;
+        @include text-large;
+    }
+}
+
+footer{
+    position: fixed;
+    left: 50%;
+    bottom: .83em;
+    transform: translateX(-50%);
+    a{
+        padding: .5em;
+        &:first-child{
+            margin-right: .05em;
+        }
+    }
+}
+
+.visually-hidden{
+    clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}

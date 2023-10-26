@@ -2,9 +2,9 @@
 const path = require('path')
 const nextConfig = {
     output: 'export', 
-    images: {
-        unoptimized: true,
-    },
+    // images: {
+    //     unoptimized: true,
+    // },
 	webpack: (cfg) => {
         cfg.module.rules.push(
             {
@@ -16,7 +16,7 @@ const nextConfig = {
         return cfg
     },
     sassOptions: {
-        includePaths: [path.join(__dirname, 'styles')],
+        includePaths: [path.join(__dirname, 'assets/style')],
     },
 }
 
