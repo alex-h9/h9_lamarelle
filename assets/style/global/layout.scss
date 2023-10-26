@@ -12,6 +12,8 @@
     width: max-content;
     &--logo{
         width: 100%;
+        height: auto;
+        pointer-events: none;
         @include is-max-tablet{
             width: 101vw;
         }

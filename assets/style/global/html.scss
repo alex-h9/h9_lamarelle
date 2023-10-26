@@ -2,9 +2,22 @@
 @import "../base/typography";
 
 html{
-    background-color: #D5D4C8;
-    color: #2C2C2B;
+    background-color: $color-light;
+    color: $color-dark;
     @include text;
+}
+
+body{
+    ::selection{
+        background-color: $color-light;
+        color: $color-dark;
+    }
+    p, a, span{
+        &::selection{
+            background-color: $color-dark;
+            color: $color-light;
+        }
+    }
 }
 
 p{

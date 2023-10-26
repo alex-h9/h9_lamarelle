@@ -1,4 +1,3 @@
-// import React from "react"
 import Head from 'next/head'
 import Script from 'next/script'
 import Image from 'next/image'
@@ -23,6 +22,7 @@ export default function Page() {
           width={766}
           height={110}
           sizes="100vw"
+          priority
         />
         <p className="centered--address">{t("address")}</p>
       </div>
