@@ -10,17 +10,11 @@ i18n:
 
 collections:
   - name: pages 
-    label: Pages
-    i18n:
-      structure: single_file
-      locales: [en, fr]
-    files:
-      - name: Home
-        label: Homepage
-        file: content/home.md
-        i18n: true
-        fields: 
-          - { label: Address, name: address, widget: string, i18n: true }
-          - { label: Instagram URL, name: ig_url, widget: string }
-          - { label: Reservations Label, name: rsv_label, widget: string, i18n: true }
-          - { label: Reservations URL, name: rsv_url, widget: string }
+    label: Homepage
+    folder: content
+    i18n: true
+    fields: 
+      - { label: Address, name: address, widget: string, i18n: true }
+      - { label: Instagram URL, name: ig_url, widget: string }
+      - { label: Reservations Label, name: rsv_label, widget: string, i18n: true }
+      - { label: Reservations URL, name: rsv_url, widget: string }

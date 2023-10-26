@@ -18,6 +18,8 @@ const nextConfig = {
     sassOptions: {
         includePaths: [path.join(__dirname, 'assets/style')],
     },
+    locales: ['en', 'fr'],
+    defaultLocale: 'fr',
 }
 
 module.exports = nextConfig
