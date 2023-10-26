@@ -1,4 +1,8 @@
-
+.lang-switcher{
+    position: fixed;
+    top: .83em;
+    right: .83em;
+}
 
 .centered{
     position: fixed;
@@ -8,7 +12,7 @@
     width: max-content;
     &--logo{
         width: 100%;
-        @include is-phone{
+        @include is-max-tablet{
             width: 101vw;
         }
     }

@@ -1,10 +1,16 @@
 /** @type {import('next').NextConfig} */
+
 const path = require('path')
+const { i18n } = require('./next-i18next.config')
+
 const nextConfig = {
-    output: 'export', 
-    // images: {
-    //     unoptimized: true,
-    // },
+    env: {
+        NEXT_PUBLIC_I18N: i18n,
+    },
+    // output: 'export', 
+    images: {
+        unoptimized: true,
+    },
 	webpack: (cfg) => {
         cfg.module.rules.push(
             {
@@ -17,9 +23,7 @@ const nextConfig = {
     },
     sassOptions: {
         includePaths: [path.join(__dirname, 'assets/style')],
-    },
-    locales: ['en', 'fr'],
-    defaultLocale: 'fr',
+    }
 }
 
 module.exports = nextConfig

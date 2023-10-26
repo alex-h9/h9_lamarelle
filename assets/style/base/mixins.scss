@@ -25,6 +25,10 @@
 	}
 }
 
+@mixin is-max-tablet{
+	@media screen and (max-width: 768px) { @content; }
+}
+
 @mixin is-phone{
 	@media screen and (max-width: 640px) { @content; }
 }
