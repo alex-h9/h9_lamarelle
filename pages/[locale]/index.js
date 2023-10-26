@@ -10,6 +10,12 @@ export default function Page() {
   return (
     <>
       <Head>
+        <title>{t("title")}</title>
+        <link rel="shortcut icon" href="img/favicon.ico" />
+        <meta name="description" content={t("meta_desc")} key="desc" />
+        <meta property="og:title" content="La Marelle" />
+        <meta property="og:description" content={t("meta_desc")} />
+        <meta property="og:image" content={t("meta_image")} />
         <Script src='https://identity.netlify.com/v1/netlify-identity-widget.js'/>
       </Head>
       <LocaleSwitcher />
