@@ -9,6 +9,11 @@ export default class Home extends Component {
     let { title, meta_desc, meta_image, coming_soon, address, rsv_url, rsv_label, ig_url } = attributes
     let showAddress
     let footerContent
+    if (typeof window !== 'undefined') {
+      const hostname = window.location.href;
+      meta_image = hostname + "/" + meta_image;
+   }
+
     if (coming_soon.hide === true){
       showAddress = null;
       footerContent = <p>{coming_soon.message}</p>;
