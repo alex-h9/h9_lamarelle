@@ -6,8 +6,25 @@ import { attributes } from '../public/pages/homepage.md'
 
 export default class Home extends Component {
   render(){
-    let { title, meta_desc, meta_image, address, rsv_url, rsv_label, ig_url } = attributes
-  
+    let { title, meta_desc, meta_image, coming_soon, address, rsv_url, rsv_label, ig_url } = attributes
+    let showAddress
+    let footerContent
+    if (coming_soon.hide === "true"){
+      showAddress = null;
+      footerContent = <p>{coming_soon.message}</p>;
+    } else {
+      showAddress = <p className="centered--address" >{address}</p>;
+      footerContent = <div>
+                        <a href={rsv_url} target="_blank">
+                          {rsv_label}
+                        </a>
+                        <a href={ig_url} target="_blank">
+                          Instagram
+                        </a>
+                      </div>;
+    }
+
+
     return (
       <>
         <Head>
@@ -30,16 +47,11 @@ export default class Home extends Component {
             sizes="100vw"
             priority
           />
-          <p className="centered--address">{address}</p>
+         {showAddress}
         </div>
 
         <footer>
-          <a href={rsv_url} target="_blank">
-            {rsv_label}
-          </a>
-          <a href={ig_url} target="_blank">
-            Instagram
-          </a>
+          {footerContent}
         </footer>
       </>
     )

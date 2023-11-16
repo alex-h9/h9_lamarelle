@@ -12,6 +12,12 @@ collections:
     fields: 
       - { label: Share Image, name: meta_image, widget: image }
       - { label: Share Description, name: meta_desc, widget: string }
+      - label: Coming soon
+        name: coming_soon
+        widget: object
+        fields:
+        - { label: Hide address, name: hide, widget: boolean }
+        - { label: Coming soon message, name: message, widget: string }
       - { label: Address, name: address, widget: string }
       - { label: Instagram URL, name: ig_url, widget: string }
       - { label: Reservations Label, name: rsv_label, widget: string }
