@@ -1,6 +1,6 @@
 ---
 title: La Marelle
-meta_image: img/lamarelle-logo.svg
+meta_image: img/la-marelle-share-image.jpg
 meta_desc: Restaurant La Marelle
 coming_soon:
   hide: true
