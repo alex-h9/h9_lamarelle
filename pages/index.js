@@ -11,8 +11,8 @@ export default class Home extends Component {
     let footerContent
     if (typeof window !== 'undefined') {
       const hostname = window.location.href;
-      meta_image = hostname + "/" + meta_image;
-   }
+      meta_image = hostname + meta_image;
+    }
 
     if (coming_soon.hide === true){
       showAddress = null;
