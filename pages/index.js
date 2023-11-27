@@ -15,8 +15,8 @@ export default class Home extends Component {
     }
 
     if (coming_soon.hide === true){
-      showAddress = null;
-      footerContent = <p>{coming_soon.message}</p>;
+      showAddress = <p className="centered--address">{coming_soon.message}</p>;
+      footerContent = null;
     } else {
       showAddress = <p className="centered--address" >{address}</p>;
       footerContent = <div>
