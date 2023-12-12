@@ -6,7 +6,7 @@ coming_soon:
   hide: false
   message: À venir
 address: 125 Rue Beaubien O
-ig_url: https://www.instagram.com/restaurantlamarelle
+ig_url: https://www.instagram.com/lerestaurantlamarelle/
 rsv_label: Réservations
 rsv_url: https://resy.com/cities/mtl/la-marelle
 ---
